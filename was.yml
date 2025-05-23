@@ -1,0 +1,8 @@
+---
+- name: "fail is smag instance is not found"
+  stat: path={{ v_ca_smag_home}}
+  register: check_ca_smag_install
+
+- ansible.builtin.fail: 
+  stat: 
+  
